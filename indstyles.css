@@ -1,0 +1,118 @@
+/*CSS dokument - inviduel opgave*/
+
+#logo {
+	width: 180px;
+	float: right;
+	vertical-align: center;
+}
+
+#geo-logo{
+	width: 180px;
+}
+
+body {
+	font-family: "Roboto",sans-serif;
+	background-color: #D9EDF7;
+}
+
+/* inspireet af w3's css 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns*/
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  min-height: 400px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Inspireret af CSS fra obligatorisk opgave 3 af Naja Suhr*/
+.header {
+  overflow: hidden;
+  background-color: #CDEAED;
+  padding: 13px 40px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 10px;
+	display: inline-flex;
+
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ footer{
+  padding: 20px 40px;
+  background: #88C8D0;
+  text-align: center;
+  color: black;
+}
+
+
+
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+};
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Inspireet af W3s CSS
+https://www.w3schools.com/cssref/pr_tab_table-layout.asp*/
+
+#A, #B, #C {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#A td, #B td, #C  td, #A th, #B th, #C th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+#A tr:nth-child(even){background-color: #f2f2f2;}
+#B tr:nth-child(even){background-color: #f2f2f2;}
+#C tr:nth-child(even){background-color: #f2f2f2;}
+
+#A tr:hover {background-color: #ddd;}
+#B tr:hover {background-color: #ddd;}
+#C tr:hover {background-color: #ddd;}
